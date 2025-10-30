@@ -1,0 +1,17 @@
+[package]
+name = "bump-tx-fee"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+alloy = { version = "1.0", default-features = false, features = [
+    "full",
+    "node-bindings",
+    "rlp",
+    "rpc-types-beacon",
+    "rpc-types",
+] }
+tokio = { version = "1", features = ["full"] }
+dotenvy = "0.15"
+anyhow = "1"
+reqwest = { version = "0.12", default-features = true }
